@@ -3,7 +3,7 @@
             [polylith.clj.core.util.interface.color :as color]))
 
 (defn print-error-message [e]
-  (when-let [message (.getMessage e)]
+  (when-let [message (.getMessage ^Exception e)]
     (println message)))
 
 (defn print-stacktrace [e]
@@ -12,5 +12,5 @@
 (defn print-exception [cmd e]
   (println (or (-> e ex-data :err)
                (if (= "test" cmd)
-                 (.getMessage e)
+                 (.getMessage ^Exception e)
                  e))))

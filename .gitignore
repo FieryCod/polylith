@@ -31,3 +31,7 @@ projects/**/pom.xml
 /examples/doc-example/.idea/**
 /examples/local-dep/.idea/**
 /examples/local-dep-old-format/.idea/**
+
+# Ignore native-image build artifacts
+poly
+poly.jar

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# You should most probably support windows users as well
+if [ -f /usr/local/bin/poly.jar ]; then
+    java -jar /usr/local/lib/poly.jar "$@"
+else
+    echo "poly.jar not found in /usr/local/bin/. Falling back to ./poly.jar"
+    java -jar ./poly.jar "$@"
+fi;

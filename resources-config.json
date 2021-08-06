@@ -1,0 +1,8 @@
+{
+    "resources": [
+        {"pattern": "org/apache/maven/model/pom-4.0.0.xml$"},
+        {"pattern":"\\Qcognitect_aws_http.edn\\E"},
+        {"pattern":"\\Qcognitect/aws/endpoints.edn\\E"},
+        {"pattern":"\\Qcognitect/aws/s3/service.edn\\E"}
+    ]
+}
