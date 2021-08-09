@@ -2,7 +2,7 @@
   (:import
    [java.lang ProcessBuilder Process]))
 
-(def FALLBACK_COMMANDS #{"test"})
+(def FALLBACK_COMMANDS #{"test" "prompt"})
 
 (defn should-fallback?
   [args]
